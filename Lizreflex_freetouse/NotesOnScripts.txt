@@ -1,0 +1,16 @@
+%EHM 12/13/2018
+
+Feel free to use these scripts, however, please make sure to check what you need yourself to make sure is accurate. All outputs of these scripts were not currently in use, therefore, everything was not thoroughly vetted. Please check your own data.
+
+How to use scripts: 
+1) Run MainGui_Adaptation_SustainedReflex AMP_Scripts folder
+2) Run concatmatrix_reflex_Use script
+	- identifies trials as shift up or shift down - NOTE: no control trials here
+	- concatenate all information in structure "analysis.." so can pull information out later
+3) {optional} combine_online_offline
+	- if have done some analysis offline or have more than one reflex analysis that you want to combine do the following:
+	- open one "analysis.mat" --> save as "analysis_off.mat"  (doesn't actually matter which one this is, just need to be able to have both open)
+	- open other "analysis.mat"
+	- Run script, will combine analysis.mat and analysis_off.mat into one combine.mat file
+4) Run plotandSAVEavg_aftercombined
+	- can use this either on a single "analysis.mat" file or a "combine.mat" file
